@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F4428B242DA593EE0082873E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F4428B232DA593EE0082873E /* FirebaseAnalytics */; };
+		F4428B262DA593EE0082873E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F4428B252DA593EE0082873E /* FirebaseAuth */; };
+		F4428B282DA593EE0082873E /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = F4428B272DA593EE0082873E /* FirebaseCore */; };
+		F4428B2A2DA593EE0082873E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F4428B292DA593EE0082873E /* FirebaseFirestore */; };
+		F4428B3A2DA5950C0082873E /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F4428B392DA5950C0082873E /* FirebaseFirestoreCombine-Community */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F4428B0C2DA593070082873E /* chat-firebase-io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chat-firebase-io.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +31,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4428B242DA593EE0082873E /* FirebaseAnalytics in Frameworks */,
+				F4428B2A2DA593EE0082873E /* FirebaseFirestore in Frameworks */,
+				F4428B282DA593EE0082873E /* FirebaseCore in Frameworks */,
+				F4428B3A2DA5950C0082873E /* FirebaseFirestoreCombine-Community in Frameworks */,
+				F4428B262DA593EE0082873E /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				F4428B0E2DA593070082873E /* chat-firebase-io */,
+				F4428B382DA5950C0082873E /* Frameworks */,
 				F4428B0D2DA593070082873E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +57,13 @@
 				F4428B0C2DA593070082873E /* chat-firebase-io.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F4428B382DA5950C0082873E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +86,11 @@
 			);
 			name = "chat-firebase-io";
 			packageProductDependencies = (
+				F4428B232DA593EE0082873E /* FirebaseAnalytics */,
+				F4428B252DA593EE0082873E /* FirebaseAuth */,
+				F4428B272DA593EE0082873E /* FirebaseCore */,
+				F4428B292DA593EE0082873E /* FirebaseFirestore */,
+				F4428B392DA5950C0082873E /* FirebaseFirestoreCombine-Community */,
 			);
 			productName = "chat-firebase-io";
 			productReference = F4428B0C2DA593070082873E /* chat-firebase-io.app */;
@@ -94,6 +120,9 @@
 			);
 			mainGroup = F4428B032DA593070082873E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F4428B222DA593EE0082873E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F4428B0D2DA593070082873E /* Products */;
 			projectDirPath = "";
@@ -260,6 +289,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,6 +319,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +355,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4428B222DA593EE0082873E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4428B232DA593EE0082873E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4428B222DA593EE0082873E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F4428B252DA593EE0082873E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4428B222DA593EE0082873E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F4428B272DA593EE0082873E /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4428B222DA593EE0082873E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		F4428B292DA593EE0082873E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4428B222DA593EE0082873E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F4428B392DA5950C0082873E /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4428B222DA593EE0082873E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4428B042DA593070082873E /* Project object */;
 }
